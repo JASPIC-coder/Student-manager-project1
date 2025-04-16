@@ -16,7 +16,7 @@ public class StudentManager {
     // Sort students by ID
     public void sortStudents(Map<Integer, String> students) {
         if (students.isEmpty()) {
-            System.out.println("⚠ No students to display.");
+            System.out.println(" No students to display.");
         } else {
             Map<Integer, String> sortedStudents = new TreeMap<>(students);
             System.out.println(" Sorted Students by ID:");
@@ -46,7 +46,7 @@ public class StudentManager {
     // Find student with highest ID
     public void findStudentWithHighestId(Map<Integer, String> students) {
         if (students.isEmpty()) {
-            System.out.println("⚠️ No students available.");
+            System.out.println(" No students available.");
         } else {
             int highestId = Collections.max(students.keySet());
             System.out.println(" Student with highest ID: ID = " + highestId + ", Name = " + students.get(highestId));
@@ -56,10 +56,10 @@ public class StudentManager {
     // Find student with lowest ID
     public void findStudentWithLowestId(Map<Integer, String> students) {
         if (students.isEmpty()) {
-            System.out.println("⚠️ No students available.");
+            System.out.println(" No students available.");
         } else {
             int lowestId = Collections.min(students.keySet());
-            System.out.println("⬇ Student with lowest ID: ID = " + lowestId + ", Name = " + students.get(lowestId));
+            System.out.println(" Student with lowest ID: ID = " + lowestId + ", Name = " + students.get(lowestId));
         }
     }
 }
