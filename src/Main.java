@@ -77,7 +77,7 @@ public class Main {
                 case 3:
                     // Remove student
                     if (students.isEmpty()) {
-                        System.out.println("⚠️ No students to remove.");
+                        System.out.println(" No students to remove.");
                     } else {
                         System.out.println("Current students: " + students);
                         System.out.print("Enter student ID to remove: ");
